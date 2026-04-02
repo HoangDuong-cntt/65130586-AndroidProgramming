@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56A4AA"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context=".FooterFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        app:backgroundTint="#2E70B9"
+        android:text="@string/btn_one"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        app:backgroundTint="#2E70B9"
+        android:text="@string/btn_two"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        app:backgroundTint="#2E70B9"
+        android:text="@string/btn_three"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+        app:cornerRadius="15dp" />
+
+</LinearLayout>
