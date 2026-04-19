@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÍNH CHỈ SỐ BMI"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <EditText android:id="@+id/edChieuCao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập chiều cao (cm)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"/>
+
+    <EditText android:id="@+id/edCanNang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập cân nặng (kg)"
+        android:inputType="numberDecimal" />
+
+    <Button android:id="@+id/btnTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TÍNH NGAY"
+        android:layout_marginTop="10dp" />
+
+    <TextView android:id="@+id/tvKQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả sẽ hiện ở đây"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="backToMain"
+        android:text="Quay lại Menu chính" />
+</LinearLayout>
