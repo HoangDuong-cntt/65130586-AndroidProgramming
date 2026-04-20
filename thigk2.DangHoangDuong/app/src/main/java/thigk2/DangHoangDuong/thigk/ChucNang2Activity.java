@@ -10,7 +10,6 @@ public class ChucNang2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Đảm bảo bạn đã tạo file activity_list.xml trong thư mục layout
         setContentView(R.layout.activity_list);
 
         ListView lv = findViewById(R.id.listView);
