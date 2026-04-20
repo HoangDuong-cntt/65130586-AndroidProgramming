@@ -1,4 +1,5 @@
 package thigk2.DangHoangDuong.thigk;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,14 +10,29 @@ import android.widget.TextView;
 import java.util.List;
 
 public class MyAdapter extends ArrayAdapter<ItemData> {
-    public MyAdapter(Context ctx, List<ItemData> items) { super(ctx, 0, items); }
+    // Sửa Constructor này cho đúng
+    public MyAdapter(Context context, List<ItemData> objects) {
+        super(context, 0, objects);
+    }
+
     @Override
-    public View getView(int position, View v, ViewGroup parent) {
-        if (v == null) v = LayoutInflater.from(getContext()).inflate(R.layout.item_row, parent, false);
+    public View getView(int position, View convertView, ViewGroup parent) {
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_row, parent, false);
+        }
+
         ItemData item = getItem(position);
-        ((ImageView)v.findViewById(R.id.imgRow)).setImageResource(item.img);
-        ((TextView)v.findViewById(R.id.txtT1)).setText(item.t1);
-        ((TextView)v.findViewById(R.id.txtT2)).setText(item.t2);
-        return v;
+
+        ImageView img = convertView.findViewById(R.id.imgRow);
+        TextView txt1 = convertView.findViewById(R.id.txtT1);
+        TextView txt2 = convertView.findViewById(R.id.txtT2);
+
+        if (item != null) {
+            img.setImageResource(item.img);
+            txt1.setText(item.t1);
+            txt2.setText(item.t2);
+        }
+
+        return convertView;
     }
 }
