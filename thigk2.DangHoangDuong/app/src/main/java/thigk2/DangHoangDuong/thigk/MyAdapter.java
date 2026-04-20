@@ -10,7 +10,6 @@ import android.widget.TextView;
 import java.util.List;
 
 public class MyAdapter extends ArrayAdapter<ItemData> {
-    // Sửa Constructor này cho đúng
     public MyAdapter(Context context, List<ItemData> objects) {
         super(context, 0, objects);
     }
